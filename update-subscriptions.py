@@ -1,7 +1,7 @@
 import argparse
 import stripe
 
-stripe.api_key = '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'
+stripe.api_key = ''
 old_price_id = '' # Hier de oude price ID invullen
 new_price_id = '' # Hier de nieuwe price ID invullen
 

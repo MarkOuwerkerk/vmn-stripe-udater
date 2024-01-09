@@ -3,11 +3,11 @@ import stripe
 # Set your Stripe API key
 stripe.api_key = ''
 # Specify the old and new price IDs
-old_price_id = 'price_1MOg6yEyIepN1LMPsGC6HR25'
-new_price_id = 'price_1OSeTOEyIepN1LMPs1BUvxYg'
+old_price_id = '' # Hier de oude price ID invullen
+new_price_id = '' # Hier de nieuwe price ID invullen
 
 # Retrieve all subscriptions
-subscriptions = stripe.Subscription.list(limit=473) # You might need to paginate if you have more than 100 subscription
+subscriptions = stripe.Subscription.list(limit=473) # de limiet moet het aantal subscriptions zijn
 #print(subscriptions.data[0])
 subcription = subscriptions.data[3]
 items = subcription['items']['data']
